@@ -36,3 +36,24 @@ html{scroll-behavior:smooth}
 .project:hover .visual img {
   transform: scale(1.05);
 }
+/* Professional Page Animation */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: pageFadeIn 0.8s ease-out both;
+}
+
+/* Smooth Project Animation */
+.project {
+  animation: pageFadeIn 0.9s ease-out both;
+}
+
